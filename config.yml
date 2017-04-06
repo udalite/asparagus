@@ -1,0 +1,17 @@
+relays:
+  - name: Light Relay
+    type: gpio
+    port: 14
+    schedule:
+      '06.00': 960
+      '12.30': 60
+  - name: Water Pump Relay
+    type: 1wire
+    1wire_id: 29-00000017b145
+    port: 1
+logfile: /var/log/asparagus/grow.log
+pidfile: /var/run/asparagus.pid
+photos_path: /opt/asparagus/photos/
+yandex:
+  login: login@yandex.ru
+  pass: pass
